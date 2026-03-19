@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "maestro-langgraph"
+version = "1.0.0"
+description = "MAESTRO V4 implementation using LangGraph - Clinical AI Agent with Bayesian Lifelong Learning"
+authors = ["MAESTRO Team"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langgraph = "^0.2.0"
+langchain = "^0.3.0"
+langchain-openai = "^0.2.0"
+langchain-anthropic = "^0.2.0"
+dspy-ai = "^2.5.0"
+pydantic = "^2.9.0"
+scipy = "^1.14.0"
+numpy = "^2.0.0"
+chromadb = "^0.5.0"
+psycopg2-binary = "^2.9.9"
+redis = "^5.0.0"
+pandas = "^2.2.0"
+scikit-learn = "^1.5.0"
+pymc = "^5.16.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.0"
+black = "^24.0.0"
+ruff = "^0.5.0"
+mypy = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
